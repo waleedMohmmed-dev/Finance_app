@@ -1,6 +1,6 @@
 class AppAssets {
   static const String onBoard = "assets/images/onBoard1.png";
-  static String photo = 'assets/images/photo.jpg';
+  static const String profileImage = "assets/images/cv.jpeg";
   static const String layer1 = "assets/images/layer1.png";
   static const String layer2 = "assets/images/layer2.png";
 

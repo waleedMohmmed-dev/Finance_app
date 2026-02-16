@@ -1,5 +1,6 @@
 import 'package:finance_app/core/styling/app_colors.dart';
 import 'package:finance_app/core/widgets/spacing_widgets.dart';
+
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,7 +19,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
       padding: EdgeInsets.symmetric(horizontal: 24.w),
       child: Column(
         children: [
-          const HeightSpace(50),
+          HeightSpace(50),
           SizedBox(
             height: 236.h,
             width: double.infinity,
@@ -40,11 +41,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
   }
 
   Widget getTitles(double value, TitleMeta meta) {
-    const style = TextStyle(
-      color: Colors.grey,
-      fontWeight: FontWeight.bold,
-      fontSize: 14,
-    );
+    final style = TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 14);
     String text;
     switch (value.toInt()) {
       case 0:
@@ -96,10 +93,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
         reservedSize: 28,
         getTitlesWidget: (value, meta) => Text(
           "${value.toInt()}k",
-          style: const TextStyle(
-            color: Colors.grey,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
         ),
       ),
     ),
@@ -125,7 +119,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
           ),
           BarChartRodData(
             toY: 3,
-            color: const Color(0xff303A6E),
+            color: Color(0xff303A6E),
             width: 12.w,
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(8.r),

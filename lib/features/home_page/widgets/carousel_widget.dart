@@ -32,20 +32,18 @@ class _CustomCarsouselWidgetState extends State<CustomCarsouselWidget> {
               });
             },
           ),
-          items: const [CardItemWidget(), CardItemWidget(), CardItemWidget()],
+          items: [CardItemWidget(), CardItemWidget(), CardItemWidget()],
         ),
         const HeightSpace(16),
         DotsIndicator(
           dotsCount: 3,
           position: currentIndexPage,
           decorator: DotsDecorator(
-            spacing: const EdgeInsets.symmetric(horizontal: 4),
-            color: const Color(0xffE3E9ED),
+            spacing: EdgeInsets.symmetric(horizontal: 4),
+            color: Color(0xffE3E9ED),
             size: const Size.square(9.0),
             activeSize: const Size(18.0, 9.0),
-            activeShape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5.0),
-            ),
+            activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
           ),
         ),
       ],

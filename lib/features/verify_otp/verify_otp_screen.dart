@@ -4,6 +4,7 @@ import 'package:finance_app/core/styling/app_styles.dart';
 import 'package:finance_app/core/widgets/back_button_widget.dart';
 import 'package:finance_app/core/widgets/primay_button_widget.dart';
 import 'package:finance_app/core/widgets/spacing_widgets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -43,10 +44,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                 const HeightSpace(28),
                 SizedBox(
                   width: 280.w,
-                  child: Text(
-                    "OTP Verification",
-                    style: AppStyles.primaryHeadLinesStyle,
-                  ),
+                  child: Text("OTP Verification", style: AppStyles.primaryHeadLinesStyle),
                 ),
                 const HeightSpace(10),
                 Text(
@@ -61,9 +59,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                   obscureText: false,
                   enableActiveFill: true,
                   keyboardType: TextInputType.number,
-                  textStyle: AppStyles.primaryHeadLinesStyle.copyWith(
-                    fontSize: 22.sp,
-                  ),
+                  textStyle: AppStyles.primaryHeadLinesStyle.copyWith(fontSize: 22.sp),
                   pinTheme: PinTheme(
                     fieldWidth: 70.w,
                     fieldHeight: 60.h,
@@ -94,12 +90,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                       style: AppStyles.black15BoldStyle.copyWith(
                         color: AppColors.primaryColor,
                       ),
-                      children: [
-                        TextSpan(
-                          text: "Resend",
-                          style: AppStyles.black15BoldStyle,
-                        ),
-                      ],
+                      children: [TextSpan(text: "Resend", style: AppStyles.black15BoldStyle)],
                     ),
                   ),
                 ),

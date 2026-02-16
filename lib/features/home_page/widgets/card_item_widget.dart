@@ -2,6 +2,7 @@ import 'package:finance_app/core/styling/app_assets.dart';
 import 'package:finance_app/core/styling/app_colors.dart';
 import 'package:finance_app/core/styling/app_styles.dart';
 import 'package:finance_app/core/widgets/spacing_widgets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,42 +24,22 @@ class CardItemWidget extends StatelessWidget {
         Positioned(
           bottom: 0,
           left: 0,
-          child: Image.asset(
-            AppAssets.layer2,
-            width: 120.w,
-            height: 130.w,
-            fit: BoxFit.fill,
-          ),
+          child: Image.asset(AppAssets.layer2, width: 120.w, height: 130.w, fit: BoxFit.fill),
         ),
         Positioned(
           bottom: 0,
           left: 0,
-          child: Image.asset(
-            AppAssets.layer1,
-            width: 120.w,
-            height: 130.w,
-            fit: BoxFit.fill,
-          ),
+          child: Image.asset(AppAssets.layer1, width: 120.w, height: 130.w, fit: BoxFit.fill),
         ),
         Positioned(
           bottom: 0,
           left: 0,
-          child: Image.asset(
-            AppAssets.layer2,
-            width: 207.w,
-            height: 200.h,
-            fit: BoxFit.fill,
-          ),
+          child: Image.asset(AppAssets.layer2, width: 207.w, height: 200.h, fit: BoxFit.fill),
         ),
         Positioned(
           bottom: 0,
           left: 0,
-          child: Image.asset(
-            AppAssets.layer1,
-            width: 207.w,
-            height: 200.h,
-            fit: BoxFit.fill,
-          ),
+          child: Image.asset(AppAssets.layer1, width: 207.w, height: 200.h, fit: BoxFit.fill),
         ),
         Positioned(
           left: 24.w,
@@ -94,10 +75,7 @@ class CardItemWidget extends StatelessWidget {
           right: 24.w,
           child: Text(
             "12/24",
-            style: AppStyles.black18BoldStyle.copyWith(
-              fontSize: 12.sp,
-              color: Colors.white,
-            ),
+            style: AppStyles.black18BoldStyle.copyWith(fontSize: 12.sp, color: Colors.white),
           ),
         ),
         Positioned(
@@ -105,10 +83,7 @@ class CardItemWidget extends StatelessWidget {
           left: 24.w,
           child: Text(
             "****  3434",
-            style: AppStyles.black18BoldStyle.copyWith(
-              fontSize: 12.sp,
-              color: Colors.white,
-            ),
+            style: AppStyles.black18BoldStyle.copyWith(fontSize: 12.sp, color: Colors.white),
           ),
         ),
       ],

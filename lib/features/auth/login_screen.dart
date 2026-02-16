@@ -7,6 +7,7 @@ import 'package:finance_app/core/widgets/primay_button_widget.dart';
 import 'package:finance_app/core/widgets/spacing_widgets.dart';
 import 'package:finance_app/features/auth/widgets/custom_or_login_widget.dart';
 import 'package:finance_app/features/auth/widgets/social_login_buttons.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -88,9 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     alignment: Alignment.centerRight,
                     child: Text(
                       "Forget Password?",
-                      style: AppStyles.black15BoldStyle.copyWith(
-                        color: const Color(0xff6A707C),
-                      ),
+                      style: AppStyles.black15BoldStyle.copyWith(color: Color(0xff6A707C)),
                     ),
                   ),
                   const HeightSpace(15),
@@ -115,10 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           color: AppColors.primaryColor,
                         ),
                         children: [
-                          TextSpan(
-                            text: "Register Now",
-                            style: AppStyles.black15BoldStyle,
-                          ),
+                          TextSpan(text: "Register Now", style: AppStyles.black15BoldStyle),
                         ],
                       ),
                     ),

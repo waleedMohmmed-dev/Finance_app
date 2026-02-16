@@ -2,6 +2,7 @@ import 'package:finance_app/core/widgets/spacing_widgets.dart';
 import 'package:finance_app/features/home_page/widgets/carousel_widget.dart';
 import 'package:finance_app/features/home_page/widgets/custom_home_page_item.dart';
 import 'package:finance_app/features/home_page/widgets/top_profile_notification_widget.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,12 +20,11 @@ class _HomePageScreenState extends State<HomePageScreen> {
       padding: EdgeInsets.symmetric(horizontal: 24.w),
       child: Column(
         children: [
-          const HeightSpace(18),
-
-          const TopProfileNotificationWidget(),
-          const HeightSpace(18),
-          const CustomCarsouselWidget(),
-          const HeightSpace(24),
+          HeightSpace(18),
+          TopProfileNotificationWidget(),
+          HeightSpace(18),
+          CustomCarsouselWidget(),
+          HeightSpace(24),
           Expanded(
             child: GridView(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -32,7 +32,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 mainAxisSpacing: 8.sp,
                 crossAxisSpacing: 16.sp,
               ),
-              children: const [
+              children: [
                 CustomHomePageItem(
                   title: "Send Money",
                   description: "Take acc to acc",

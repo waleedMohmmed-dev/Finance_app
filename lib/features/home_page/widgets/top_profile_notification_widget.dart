@@ -2,6 +2,7 @@ import 'package:finance_app/core/styling/app_assets.dart';
 import 'package:finance_app/core/styling/app_colors.dart';
 import 'package:finance_app/core/styling/app_styles.dart';
 import 'package:finance_app/core/widgets/spacing_widgets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,24 +18,22 @@ class TopProfileNotificationWidget extends StatelessWidget {
           children: [
             ClipOval(
               child: Image.asset(
-                AppAssets.photo,
+                AppAssets.profileImage,
                 width: 48.w,
                 height: 48.w,
                 fit: BoxFit.fill,
               ),
             ),
-            const WidthSpace(11),
+            WidthSpace(11),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Welcome back",
-                  style: AppStyles.grey12MediumStyle.copyWith(
-                    color: const Color(0xff6A707C),
-                  ),
+                  style: AppStyles.grey12MediumStyle.copyWith(color: const Color(0xff6A707C)),
                 ),
                 const HeightSpace(2),
-                Text(" Waleed Mohmmed ", style: AppStyles.black18BoldStyle),
+                Text("Waleed Mohmmed ", style: AppStyles.black18BoldStyle),
               ],
             ),
           ],
@@ -45,13 +44,9 @@ class TopProfileNotificationWidget extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: const Color(0xffE3E9ED), width: 1),
+            border: Border.all(color: Color(0xffE3E9ED), width: 1),
           ),
-          child: Icon(
-            Icons.notifications,
-            size: 24.sp,
-            color: AppColors.primaryColor,
-          ),
+          child: Icon(Icons.notifications, size: 24.sp, color: AppColors.primaryColor),
         ),
       ],
     );

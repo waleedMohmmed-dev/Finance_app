@@ -1,7 +1,5 @@
 import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/features/auth/login_screen.dart';
-import 'package:finance_app/features/auth/my_card_screen/my_card_screen.dart';
-import 'package:finance_app/features/auth/my_profiel_screeen/my_profiel_screeen.dart';
 import 'package:finance_app/features/main_screen/main_screen.dart';
 import 'package:finance_app/features/on_boarding_screen/on_boarding_screen.dart';
 import 'package:finance_app/features/verify_otp/verify_otp_screen.dart';
@@ -30,16 +28,6 @@ class RouterGenerationConfig {
         path: AppRoutes.mainScreen,
         name: AppRoutes.mainScreen,
         builder: (context, state) => const MainScreen(),
-      ),
-      GoRoute(
-        name: AppRoutes.myCardScreen,
-        path: AppRoutes.myCardScreen,
-        builder: (context, state) => MyCardscreen(),
-      ),
-      GoRoute(
-        name: AppRoutes.profeilScreen,
-        path: AppRoutes.profeilScreen,
-        builder: (context, state) => MyProfielScreen(),
       ),
     ],
   );

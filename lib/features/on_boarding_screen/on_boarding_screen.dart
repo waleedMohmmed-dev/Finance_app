@@ -4,6 +4,7 @@ import 'package:finance_app/core/styling/app_styles.dart';
 import 'package:finance_app/core/widgets/primary_outlined_button_widget.dart';
 import 'package:finance_app/core/widgets/primay_button_widget.dart';
 import 'package:finance_app/core/widgets/spacing_widgets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -19,7 +20,7 @@ class OnBoardingScreen extends StatelessWidget {
           Image.asset(
             AppAssets.onBoard,
             width: double.infinity,
-            height: 570.h,
+            height: 550.h,
             fit: BoxFit.fitWidth,
           ),
           const HeightSpace(21),

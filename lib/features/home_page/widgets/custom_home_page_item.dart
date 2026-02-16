@@ -31,7 +31,7 @@ class CustomHomePageItem extends StatelessWidget {
               height: 48.w,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: const Color(0xffECF1F6),
+                color: Color(0xffECF1F6),
                 borderRadius: BorderRadius.circular(16.r),
               ),
               child: Icon(iconData, size: 20.sp, color: AppColors.primaryColor),

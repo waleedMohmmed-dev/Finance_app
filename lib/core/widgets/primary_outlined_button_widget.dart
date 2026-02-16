@@ -1,4 +1,5 @@
 import 'package:finance_app/core/styling/app_colors.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,10 +29,7 @@ class PrimayOutlinedButtonWidget extends StatelessWidget {
     return OutlinedButton(
       onPressed: onPress,
       style: OutlinedButton.styleFrom(
-        side: BorderSide(
-          color: bordersColor ?? AppColors.primaryColor,
-          width: 1,
-        ),
+        side: BorderSide(color: bordersColor ?? AppColors.primaryColor, width: 1),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(bordersRadius ?? 8.r),
         ),

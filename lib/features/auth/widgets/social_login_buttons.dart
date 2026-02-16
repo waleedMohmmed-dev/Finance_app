@@ -1,6 +1,5 @@
 import 'package:finance_app/core/styling/app_assets.dart';
 import 'package:finance_app/features/auth/widgets/custom_icon_button.dart';
-
 import 'package:flutter/material.dart';
 
 class CustomSocialLoginIcons extends StatelessWidget {

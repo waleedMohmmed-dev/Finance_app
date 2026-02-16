@@ -1,8 +1,8 @@
 import 'package:finance_app/core/styling/app_colors.dart';
-import 'package:finance_app/features/auth/my_card_screen/my_card_screen.dart';
-import 'package:finance_app/features/auth/my_profiel_screeen/my_profiel_screeen.dart';
 import 'package:finance_app/features/home_page/home_page_screen.dart';
+import 'package:finance_app/features/profile/profile_screen.dart';
 import 'package:finance_app/features/statistics/statistics_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,14 +19,9 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> screens = [
     const HomePageScreen(),
     const StatisticsScreen(),
-
-    Container(
-      width: double.infinity,
-      height: double.infinity,
-      color: Colors.white,
-    ),
-    const MyCardscreen(),
-    const MyProfielScreen(),
+    Container(width: double.infinity, height: double.infinity, color: Colors.yellow),
+    Container(width: double.infinity, height: double.infinity, color: Colors.yellow),
+    ProfileScreen(),
   ];
 
   @override
